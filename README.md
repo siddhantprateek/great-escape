@@ -21,8 +21,51 @@ We started off by planning and customizing the UI design and what major things t
 ![GraphQL](https://img.shields.io/badge/-GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white)
 ![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens)
 
-## API Reference
+## Application Structure
 
+```bash
+├── README.md
+├── assets
+├── client # react/javascript application
+│   ├── public
+│   ├── src
+│   │   ├── assets
+│   │   ├── components
+│   │   │   ├── activityCard
+│   │   │   ├── footer
+│   │   │   ├── form
+│   │   │   ├── galleryCard
+│   │   │   ├── header
+│   │   │   ├── hotelCard
+│   │   │   ├── teams
+│   │   │   └── tripcard
+│   │   ├── config
+│   │   ├── pages
+│   │   │   ├── activities
+│   │   │   ├── booking
+│   │   │   ├── contact
+│   │   │   ├── gallery
+│   │   │   ├── home
+│   │   │   ├── hotels
+│   │   │   ├── profile
+│   │   │   └── trip
+│   │   └── utils
+│   ├── node_modules # client dependencies
+│   ├── Dockerfile
+│   ├── docker-compose.yml
+│   └── package.json
+├── fly.toml
+├── graphql # graphql integration
+├── model # database schema model
+├── node_modules # server dependencies
+├── package-lock.json
+├── package.json
+├── routes # server query controllers
+└── server.js # server entrypoint
+```
+
+
+## API Reference
 
 #### Open GraphQL Interface endpoint 
 
